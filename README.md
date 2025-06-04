@@ -115,7 +115,7 @@ This project uses **GitHub Actions** to automate code analysis and testing on ev
 The CI workflow automatically performs the following checks:
 
 - ✅ **Code formatting validation** using [Black](https://black.readthedocs.io/en/stable/)  
-<!-- - 🔒 **Security analysis** with [Bandit](https://bandit.readthedocs.io/en/latest/)   -->
+- 🔒 **Security analysis** with [Bandit](https://bandit.readthedocs.io/en/latest/)  
 - 🧪 **Unit testing** with [pytest](https://docs.pytest.org/)
 
 The workflow configuration file is located at:
@@ -136,7 +136,7 @@ pytest tests/
 
 # Check code formatting
 black --check .
-```
-<!-- # Run security checks (excluding dependencies and tests)
-bandit -r . -x tests,venv,env,.venv -->
 
+# Run security checks (excluding dependencies and tests)
+bandit -r . -x tests,venv,env,.venv
+```

@@ -18,22 +18,19 @@ jobs:
 
     - name: Set up Python
       uses: actions/setup-python@v4
-      with:
-        python-version: '3.x'  # adapte si besoin
 
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install pytest black bandit
-        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+        pip install -r requirements.txt
 
     - name: Check code formatting with Black
       run: |
         black --check .
 
-    # - name: Run Bandit security checks
-    #   run: |
-    #     bandit -r . -x tests
+    - name: Run Bandit security checks
+      run: |
+        bandit -r src/
 
     - name: Run tests with Pytest
       run: |
