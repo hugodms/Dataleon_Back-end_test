@@ -1,5 +1,7 @@
-
 # 📄 Table Detection with Transformers
+
+![CI](https://github.com/hugodms/Dataleon_Back-end_test/actions/workflows/ci.yml/badge.svg?branch=main)
+
 
 > A Python project using Hugging Face’s DETR transformer to detect tables in invoice and bank document images.
 
