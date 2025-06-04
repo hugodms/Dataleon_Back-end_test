@@ -43,7 +43,7 @@ It loads images, runs inference, and extracts bounding boxes for detected tables
 
 ## 🛠️ Installation
 ```bash
-git clone https://github.com/votre-utilisateur/mon-projet-table-detector.git
+git clone https://github.com/hugodms/Dataleon_Back-end_test.git
 cd mon-projet-table-detector
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
