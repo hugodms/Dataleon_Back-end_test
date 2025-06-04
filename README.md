@@ -19,7 +19,7 @@ It loads images, runs inference, and extracts bounding boxes for detected tables
 .
 ├── assets/
 ├── src/
-│	├── model/
+│   ├── model/
 │   │   └── predictor.py
 │   └── utils/
 │       └── load_image.py
