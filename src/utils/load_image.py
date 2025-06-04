@@ -6,6 +6,7 @@
 
 from PIL import Image, UnidentifiedImageError
 
+
 def load_image(image_path):
     if not image_path.lower().endswith((".png", ".jpg", ".jpeg")):
         raise ValueError("Unsupported format. Please use a .png, .jpg, or .jpeg image.")

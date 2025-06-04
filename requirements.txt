@@ -3,3 +3,5 @@ torch
 Pillow
 pytest
 timm
+black
+bandit

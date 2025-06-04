@@ -3,9 +3,14 @@ import os
 from src.model.predictor import TableDetector
 from PIL import UnidentifiedImageError
 
+
 def main():
-    parser = argparse.ArgumentParser(description="Détecter les tableaux dans une image de document.")
-    parser.add_argument("filename", type=str, help="Nom du fichier image dans le dossier 'assets/'")
+    parser = argparse.ArgumentParser(
+        description="Détecter les tableaux dans une image de document."
+    )
+    parser.add_argument(
+        "filename", type=str, help="Nom du fichier image dans le dossier 'assets/'"
+    )
     args = parser.parse_args()
 
     image_path = os.path.join("assets", args.filename)
@@ -25,6 +30,6 @@ def main():
     except Exception as e:
         print(str(e))
 
+
 if __name__ == "__main__":
     main()
-

@@ -105,3 +105,38 @@ The following errors are explicitly handled:
 - ⚠️ Unexpected runtime errors
 
 Each error is logged clearly for easier debugging.
+
+---
+
+## 🔁 Continuous Integration (CI)
+
+This project uses **GitHub Actions** to automate code analysis and testing on every push or pull request to the `main` branch.
+
+The CI workflow automatically performs the following checks:
+
+- ✅ **Code formatting validation** using [Black](https://black.readthedocs.io/en/stable/)  
+<!-- - 🔒 **Security analysis** with [Bandit](https://bandit.readthedocs.io/en/latest/)   -->
+- 🧪 **Unit testing** with [pytest](https://docs.pytest.org/)
+
+The workflow configuration file is located at:
+```
+.github/workflows/ci.yml
+```
+
+> ⚠️ The workflow will fail if the code is not properly formatted (Black) or if security issues are detected (Bandit). Pushes and pull requests must pass all checks to be accepted.
+
+## 🚀 Run Tests Locally
+
+```bash
+# Install dependencies
+pip install -r requirements.txt
+
+# Run tests
+pytest tests/
+
+# Check code formatting
+black --check .
+```
+<!-- # Run security checks (excluding dependencies and tests)
+bandit -r . -x tests,venv,env,.venv -->
+
