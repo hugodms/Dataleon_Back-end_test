@@ -14,7 +14,7 @@ It loads images, runs inference, and extracts bounding boxes for detected tables
 ---
 
 ## 📂 Project Structure
-
+```
 .
 ├── assets/
 ├── src/
@@ -29,6 +29,7 @@ It loads images, runs inference, and extracts bounding boxes for detected tables
 ├── main.py
 ├── requirements.txt
 └── README.md
+```
 
 ---
 
@@ -81,9 +82,9 @@ Detected Tables : 1
 To run unit tests using pytest:
 ```bash
 pytest tests/
-
+```
 You can also run specific test files:
-
+```bash
 pytest tests/test_predictor.py  
 pytest tests/test_load_image.py  
 pytest tests/test_main.py
