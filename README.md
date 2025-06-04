@@ -56,17 +56,18 @@ pip install -r requirements.txt
 Place your image file in the assets/ folder and run:
 
 ```bash
-python main.py assets/my_invoice.png
+python main.py my_invoice.png
 ```
 
 ### ✅ Example Output:
 
+```sh
 Results for : bank_document.png
 Detected Tables : 1
 	Table 0:
 	- Score : 0.91
 	- Box   : [40.33, 603.64, 999.71, 922.83]
-
+```
 ---
 
 ## ✅ Supported Formats
