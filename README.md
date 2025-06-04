@@ -61,7 +61,7 @@ python main.py my_invoice.png
 
 ### ✅ Example Output:
 
-```sh
+```bash
 Results for : bank_document.png
 Detected Tables : 1
 	Table 0:
