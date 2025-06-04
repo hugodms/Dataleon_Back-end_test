@@ -14,6 +14,7 @@ It loads images, runs inference, and extracts bounding boxes for detected tables
 ---
 
 ## 📂 Project Structure
+
 ```
 .
 ├── assets/
@@ -61,7 +62,7 @@ python main.py my_invoice.png
 
 ### ✅ Example Output:
 
-```bash
+```
 Results for : bank_document.png
 Detected Tables : 1
 	Table 0:
@@ -90,7 +91,6 @@ pytest tests/test_predictor.py
 pytest tests/test_load_image.py  
 pytest tests/test_main.py
 ```
-
 
 ---
 
