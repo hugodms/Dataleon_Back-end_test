@@ -101,7 +101,6 @@ The following errors are explicitly handled:
 - ❗ Unsupported file format  
 - 📂 File not found  
 - 🖼️ Invalid or unreadable image  
-- 🔒 Permission errors  
 - ⚠️ Unexpected runtime errors
 
 Each error is logged clearly for easier debugging.
